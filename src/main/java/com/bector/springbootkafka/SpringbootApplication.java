@@ -7,11 +7,12 @@ import org.springframework.kafka.annotation.EnableKafka;
 
 @EnableKafka
 @SpringBootApplication
-public class SpringbootApplication {
-
+public class SpringbootApplication
+{
     public static void main(String[] args)
     {
         SpringApplication.run(SpringbootApplication.class, args);
+
     }
 
 }

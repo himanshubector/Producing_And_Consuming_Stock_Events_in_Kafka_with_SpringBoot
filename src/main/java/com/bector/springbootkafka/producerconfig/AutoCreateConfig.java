@@ -15,4 +15,5 @@ public class AutoCreateConfig
     {
         return TopicBuilder.name("stock-events").partitions(3).replicas(3).build();
     }
+
 }

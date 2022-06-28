@@ -19,7 +19,6 @@ import java.util.Map;
 @Configuration
 public class KafkaConsumerConfiguration
 {
-
     private final Logger logger = LoggerFactory.getLogger(KafkaConsumerConfiguration.class);
     @Value("${kafka.bootstrap.server.address}")
     private String bootstrapServers;
@@ -43,5 +42,6 @@ public class KafkaConsumerConfiguration
         factory.setConsumerFactory(consumerFactory());
         return factory;
     }
+
 
 }

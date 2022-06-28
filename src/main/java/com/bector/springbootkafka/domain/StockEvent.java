@@ -23,5 +23,4 @@ public class StockEvent
     @NotNull
     @Valid
     private Stock stock;
-
 }

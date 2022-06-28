@@ -33,7 +33,6 @@ public class StockEventProducer
        // ProducerRecord producerRecord = buildProducerRecord(key,value,topic);
        // ListenableFuture<SendResult<Integer, String>> future = kafkaTemplate.send(producerRecord);
 
-
         future.addCallback(new ListenableFutureCallback<SendResult<Integer, String>>()
         {
             @Override
@@ -63,4 +62,5 @@ public class StockEventProducer
     {
         System.out.println("key = " + key + "value = " + value + throwable.getMessage());
     }
+
 }

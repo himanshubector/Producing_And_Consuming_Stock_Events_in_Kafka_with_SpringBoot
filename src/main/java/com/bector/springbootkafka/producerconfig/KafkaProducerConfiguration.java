@@ -23,7 +23,6 @@ public class KafkaProducerConfiguration
     @Value("${kafka.bootstrap.server.address}")
     private String bootstrapServers;
 
-
     @Bean
     public Map<String, Object> producerConfigs()
     {
@@ -52,5 +51,6 @@ public class KafkaProducerConfiguration
     {
         return new KafkaTemplate<>(producerFactory());
     }
+
 
 }

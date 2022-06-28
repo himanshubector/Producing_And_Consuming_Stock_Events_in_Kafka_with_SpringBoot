@@ -14,10 +14,10 @@ public class StockEventConsumer
     @Value("${consumer.group.id}")
     private String groupId;
 
-
     @KafkaListener(topics={"stock-events"}, groupId = "groupId")
     public void readMessage(ConsumerRecord<Integer,String> consumerRecord)
     {
         log.info(" Consumer Record: {}", consumerRecord);
     }
+
 }

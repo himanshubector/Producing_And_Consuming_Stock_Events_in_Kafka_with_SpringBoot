@@ -39,4 +39,5 @@ public class StockEventsController
 
         return ResponseEntity.status(HttpStatus.CREATED).body(stockEvent);
     }
+
 }

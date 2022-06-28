@@ -23,4 +23,5 @@ public class Stock
 
     @NotBlank
     private String stockDescription;
+
 }
